@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+  background: #aecefd;
+}
+
+.sidebar {
+  width: 250px;
+  background: darkgreen;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#user-list div {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: 0.2s;
+}
+
+#user-list div:hover {
+  background: #34495e;
+  cursor: pointer;
+}
+
+.highlight {
+  background: #e74c3c !important;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #c6ffc9;
+  font-size: 2rem;
+}
+
+#selected-name {
+  background-color: cornflowerblue;
+  border-radius: 8px;
+  padding: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#random-btn {
+  padding: 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background: darkorchid;
+  color: white;
+  cursor: pointer;
+}
+
+#random-btn:hover {
+  background-color: rgb(108, 35, 144);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
